@@ -1,0 +1,94 @@
+/* Imported Google font */
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+/* Created variables for colors */
+:root {
+    --white-color: hsl(0, 0%, 100%);
+    --light-grey: hsl(212, 45%, 89%);
+    --greyish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    background-color: var(--light-grey);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 22%;
+    height: 74%;
+    background-color: var(--white-color);
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+}
+
+.card img {
+    width: 280px;
+    border-radius: 24px;
+}
+
+.main-para {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px;
+    color: var(--dark-blue);
+}
+
+.second-para {
+    font-size: 15px;
+    color: grey;
+    margin: 22px;
+    text-align: center;
+    color: var(--greyish-blue);
+}
+
+.attribution {
+    font-size: 15px;
+    text-align: center;
+    margin-top: -25px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media only screen and (width <= 375px) {
+    .card {
+        width: 80%;
+        height: 87%;
+        margin-top: -45px;
+    }
+
+    .card img {
+        width: 250px;
+        padding-left: 10px;
+    }
+
+    .main-para {
+        font-size: 20px;
+    }
+
+    .second-para {
+        font-size: 18px;
+    }
+
+    .attribution {
+        font-size: 12px;
+        margin-top: -30px;
+    }
+}
